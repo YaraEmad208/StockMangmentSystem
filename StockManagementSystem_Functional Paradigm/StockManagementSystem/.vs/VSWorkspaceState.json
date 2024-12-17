@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Data",
+    "\\Entities",
+    "\\Helper",
+    "\\Repositories",
+    "\\Services",
+    "\\ViewUI"
+  ],
+  "SelectedNode": "\\Data\\DbContext.fs",
+  "PreviewInSolutionExplorer": false
+}

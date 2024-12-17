@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <Compile Include="Helper\ListFunctions.fs" />
+	  <Compile Include="Data\DbContext.fs" />
+	  <Compile Include="Entities\order.fs" />
+	  <Compile Include="Entities\User.fs" />
+	  <Compile Include="Entities\Product.fs" />
+	  <Compile Include="Entities\Category.fs" />
+	  <Compile Include="Repositories\ProductRepository.fs" />
+	  <Compile Include="Repositories\SupplierRepository.fs" />
+
+	<Compile Include="Repositories\CategoryRepository.fs" />
+
+	<Compile Include="Services\OrderService.fs" />
+	<Compile Include="Services\AuthService.fs" />
+	  <Compile Include="Services\CategoryService.fs" />
+	  <Compile Include="Services\ProductService.fs" />
+	  <Compile Include="Services\ReportService.fs" />
+	  <Compile Include="ViewUI\supplierMenue.fs" />
+	  <Compile Include="ViewUI\ReportView.fs" />
+	  <Compile Include="ViewUI\registerAdmin.fs" />
+	  <Compile Include="ViewUI\login.fs" />
+	  <Compile Include="ViewUI\orderMenu.fs" />
+
+
+	  <Compile Include="ViewUI\DisplayProduct.fs" />
+	  <Compile Include="ViewUI\mainMenu.fs" />
+	  <Compile Include="ViewUI\showMainMenu.fs" />
+
+
+	  <Content Include="appsettings.json" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.36">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.36" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.36">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+</Project>
