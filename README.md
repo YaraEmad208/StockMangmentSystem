@@ -8,11 +8,13 @@ inventory.
 Key Features
 
 ● Product Management:
+  
   ○ Add, update, or remove products from the system.
 
   ○ Store details like product ID, name, price, and quantity.
 
 ● Inventory Tracking:
+  
   ○ Update stock levels based on incoming shipments or outgoing orders.
 
   ○ Notify when stock falls below a predefined threshold.
