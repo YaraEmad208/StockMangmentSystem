@@ -1,0 +1,391 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\StockManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\viewui\\login.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\viewui\\login.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\viewui\\showmainmenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\viewui\\showmainmenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\viewui\\mainmenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\viewui\\mainmenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\viewui\\displayproduct.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\viewui\\displayproduct.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\viewui\\ordermenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\viewui\\ordermenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\viewui\\registeradmin.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\viewui\\registeradmin.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\viewui\\reportview.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\viewui\\reportview.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\viewui\\suppliermenue.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\viewui\\suppliermenue.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\services\\reportservice.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\services\\reportservice.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\services\\authservice.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\services\\authservice.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\services\\orderservice.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\services\\orderservice.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\repositories\\supplierrepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\repositories\\supplierrepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\repositories\\productrepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\repositories\\productrepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\entities\\product.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\entities\\product.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\entities\\user.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\entities\\user.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\entities\\order.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\entities\\order.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\data\\dbcontext.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\data\\dbcontext.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\helper\\listfunctions.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\helper\\listfunctions.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\stockmanagementsystem.fsproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\stockmanagementsystem.fsproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|f:\\stockmanagementsystem\\stockmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4EC0D2C3-39FA-4A5F-8B4C-39BBC6D69788}|StockManagementSystem\\StockManagementSystem.fsproj|solutionrelative:stockmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "supplierMenue.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\supplierMenue.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\ViewUI\\supplierMenue.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\supplierMenue.fs",
+              "RelativeToolTip": "StockManagementSystem\\ViewUI\\supplierMenue.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-01T19:29:38.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReportView.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\ReportView.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\ViewUI\\ReportView.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\ReportView.fs",
+              "RelativeToolTip": "StockManagementSystem\\ViewUI\\ReportView.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-01T17:46:06.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "registerAdmin.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\registerAdmin.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\ViewUI\\registerAdmin.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\registerAdmin.fs",
+              "RelativeToolTip": "StockManagementSystem\\ViewUI\\registerAdmin.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-30T20:55:07.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\login.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\ViewUI\\login.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\login.fs",
+              "RelativeToolTip": "StockManagementSystem\\ViewUI\\login.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-30T20:36:47.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "orderMenu.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\orderMenu.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\ViewUI\\orderMenu.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\orderMenu.fs",
+              "RelativeToolTip": "StockManagementSystem\\ViewUI\\orderMenu.fs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAIwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-01T14:23:30.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DisplayProduct.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\DisplayProduct.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\ViewUI\\DisplayProduct.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\DisplayProduct.fs",
+              "RelativeToolTip": "StockManagementSystem\\ViewUI\\DisplayProduct.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-17T01:11:01.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "mainMenu.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\mainMenu.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\ViewUI\\mainMenu.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\mainMenu.fs",
+              "RelativeToolTip": "StockManagementSystem\\ViewUI\\mainMenu.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-01T19:35:50.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "showMainMenu.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\showMainMenu.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\ViewUI\\showMainMenu.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\ViewUI\\showMainMenu.fs",
+              "RelativeToolTip": "StockManagementSystem\\ViewUI\\showMainMenu.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-01T19:41:15.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReportService.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Services\\ReportService.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Services\\ReportService.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Services\\ReportService.fs",
+              "RelativeToolTip": "StockManagementSystem\\Services\\ReportService.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-01T17:41:58.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthService.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Services\\AuthService.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Services\\AuthService.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Services\\AuthService.fs",
+              "RelativeToolTip": "StockManagementSystem\\Services\\AuthService.fs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-30T19:21:21.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderService.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Services\\OrderService.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Services\\OrderService.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Services\\OrderService.fs",
+              "RelativeToolTip": "StockManagementSystem\\Services\\OrderService.fs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-01T14:17:54.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SupplierRepository.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Repositories\\SupplierRepository.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Repositories\\SupplierRepository.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Repositories\\SupplierRepository.fs",
+              "RelativeToolTip": "StockManagementSystem\\Repositories\\SupplierRepository.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-17T13:29:38.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductRepository.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Repositories\\ProductRepository.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Repositories\\ProductRepository.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Repositories\\ProductRepository.fs",
+              "RelativeToolTip": "StockManagementSystem\\Repositories\\ProductRepository.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-30T18:27:42.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Product.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Entities\\Product.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Entities\\Product.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Entities\\Product.fs",
+              "RelativeToolTip": "StockManagementSystem\\Entities\\Product.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-30T18:27:25.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Entities\\User.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Entities\\User.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Entities\\User.fs",
+              "RelativeToolTip": "StockManagementSystem\\Entities\\User.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-30T19:16:41.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "order.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Entities\\order.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Entities\\order.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Entities\\order.fs",
+              "RelativeToolTip": "StockManagementSystem\\Entities\\order.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-01T14:17:26.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DbContext.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Data\\DbContext.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Data\\DbContext.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Data\\DbContext.fs",
+              "RelativeToolTip": "StockManagementSystem\\Data\\DbContext.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-17T11:53:34.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Program.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Program.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Program.fs",
+              "RelativeToolTip": "StockManagementSystem\\Program.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-17T13:24:42.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ListFunctions.fs",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\Helper\\ListFunctions.fs",
+              "RelativeDocumentMoniker": "StockManagementSystem\\Helper\\ListFunctions.fs",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\Helper\\ListFunctions.fs",
+              "RelativeToolTip": "StockManagementSystem\\Helper\\ListFunctions.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-17T12:29:35.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StockManagementSystem.fsproj",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\StockManagementSystem.fsproj",
+              "RelativeDocumentMoniker": "StockManagementSystem\\StockManagementSystem.fsproj",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\StockManagementSystem.fsproj",
+              "RelativeToolTip": "StockManagementSystem\\StockManagementSystem.fsproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001351|",
+              "WhenOpened": "2024-11-30T18:01:51.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\StockManagementSystem\\StockManagementSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "StockManagementSystem\\appsettings.json",
+              "ToolTip": "F:\\StockManagementSystem\\StockManagementSystem\\appsettings.json",
+              "RelativeToolTip": "StockManagementSystem\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-30T16:48:06.717Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

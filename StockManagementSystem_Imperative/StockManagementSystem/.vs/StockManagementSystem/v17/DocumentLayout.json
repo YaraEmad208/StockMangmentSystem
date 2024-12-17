@@ -1,0 +1,436 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Data\\DbContext.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\DbContext.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\registerAdmin.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewUI\\registerAdmin.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\showMainMenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewUI\\showMainMenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\supplierMenue.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewUI\\supplierMenue.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\ReportView.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewUI\\ReportView.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\orderMenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewUI\\orderMenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\mainMenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewUI\\mainMenu.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\login.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewUI\\login.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\DisplayProduct.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewUI\\DisplayProduct.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\ReportService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\ReportService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\ProductService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\ProductService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\OrderService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\OrderService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\AuthService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\AuthService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\CategoryService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\CategoryService.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Repositories\\SupplierRepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\SupplierRepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Repositories\\ProductRepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\ProductRepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Repositories\\CategoryRepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\CategoryRepository.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Helper\\ListFunctions.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Helper\\ListFunctions.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\Product.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entities\\Product.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\User.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entities\\User.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\order.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entities\\order.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\Category.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entities\\Category.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\StockManagementSystem.fsproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StockManagementSystem.fsproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "supplierMenue.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\supplierMenue.fs",
+              "RelativeDocumentMoniker": "ViewUI\\supplierMenue.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\supplierMenue.fs",
+              "RelativeToolTip": "ViewUI\\supplierMenue.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:26.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "showMainMenu.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\showMainMenu.fs",
+              "RelativeDocumentMoniker": "ViewUI\\showMainMenu.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\showMainMenu.fs",
+              "RelativeToolTip": "ViewUI\\showMainMenu.fs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:25.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReportView.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\ReportView.fs",
+              "RelativeDocumentMoniker": "ViewUI\\ReportView.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\ReportView.fs",
+              "RelativeToolTip": "ViewUI\\ReportView.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:24.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "registerAdmin.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\registerAdmin.fs",
+              "RelativeDocumentMoniker": "ViewUI\\registerAdmin.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\registerAdmin.fs",
+              "RelativeToolTip": "ViewUI\\registerAdmin.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:23.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "orderMenu.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\orderMenu.fs",
+              "RelativeDocumentMoniker": "ViewUI\\orderMenu.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\orderMenu.fs",
+              "RelativeToolTip": "ViewUI\\orderMenu.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:22.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "mainMenu.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\mainMenu.fs",
+              "RelativeDocumentMoniker": "ViewUI\\mainMenu.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\mainMenu.fs",
+              "RelativeToolTip": "ViewUI\\mainMenu.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:21.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "login.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\login.fs",
+              "RelativeDocumentMoniker": "ViewUI\\login.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\login.fs",
+              "RelativeToolTip": "ViewUI\\login.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:19.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DisplayProduct.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\DisplayProduct.fs",
+              "RelativeDocumentMoniker": "ViewUI\\DisplayProduct.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\ViewUI\\DisplayProduct.fs",
+              "RelativeToolTip": "ViewUI\\DisplayProduct.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:18.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbContext.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Data\\DbContext.fs",
+              "RelativeDocumentMoniker": "Data\\DbContext.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Data\\DbContext.fs",
+              "RelativeToolTip": "Data\\DbContext.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:13:06.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReportService.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\ReportService.fs",
+              "RelativeDocumentMoniker": "Services\\ReportService.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\ReportService.fs",
+              "RelativeToolTip": "Services\\ReportService.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:14.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductService.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\ProductService.fs",
+              "RelativeDocumentMoniker": "Services\\ProductService.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\ProductService.fs",
+              "RelativeToolTip": "Services\\ProductService.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:12.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderService.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\OrderService.fs",
+              "RelativeDocumentMoniker": "Services\\OrderService.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\OrderService.fs",
+              "RelativeToolTip": "Services\\OrderService.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:11.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthService.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\AuthService.fs",
+              "RelativeDocumentMoniker": "Services\\AuthService.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\AuthService.fs",
+              "RelativeToolTip": "Services\\AuthService.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:05.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoryService.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\CategoryService.fs",
+              "RelativeDocumentMoniker": "Services\\CategoryService.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Services\\CategoryService.fs",
+              "RelativeToolTip": "Services\\CategoryService.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:04.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SupplierRepository.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Repositories\\SupplierRepository.fs",
+              "RelativeDocumentMoniker": "Repositories\\SupplierRepository.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Repositories\\SupplierRepository.fs",
+              "RelativeToolTip": "Repositories\\SupplierRepository.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:01.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductRepository.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Repositories\\ProductRepository.fs",
+              "RelativeDocumentMoniker": "Repositories\\ProductRepository.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Repositories\\ProductRepository.fs",
+              "RelativeToolTip": "Repositories\\ProductRepository.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:18:00.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoryRepository.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Repositories\\CategoryRepository.fs",
+              "RelativeDocumentMoniker": "Repositories\\CategoryRepository.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Repositories\\CategoryRepository.fs",
+              "RelativeToolTip": "Repositories\\CategoryRepository.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:17:59.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ListFunctions.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Helper\\ListFunctions.fs",
+              "RelativeDocumentMoniker": "Helper\\ListFunctions.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Helper\\ListFunctions.fs",
+              "RelativeToolTip": "Helper\\ListFunctions.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:17:20.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Product.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\Product.fs",
+              "RelativeDocumentMoniker": "Entities\\Product.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\Product.fs",
+              "RelativeToolTip": "Entities\\Product.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:17:13.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\User.fs",
+              "RelativeDocumentMoniker": "Entities\\User.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\User.fs",
+              "RelativeToolTip": "Entities\\User.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:17:12.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "order.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\order.fs",
+              "RelativeDocumentMoniker": "Entities\\order.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\order.fs",
+              "RelativeToolTip": "Entities\\order.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:17:11.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Category.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\Category.fs",
+              "RelativeDocumentMoniker": "Entities\\Category.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Entities\\Category.fs",
+              "RelativeToolTip": "Entities\\Category.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:17:10.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StockManagementSystem.fsproj",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\StockManagementSystem.fsproj",
+              "RelativeDocumentMoniker": "StockManagementSystem.fsproj",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\StockManagementSystem.fsproj",
+              "RelativeToolTip": "StockManagementSystem.fsproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001351|",
+              "WhenOpened": "2024-12-13T15:15:51.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.fs",
+              "DocumentMoniker": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Program.fs",
+              "RelativeDocumentMoniker": "Program.fs",
+              "ToolTip": "C:\\Users\\Yara\\Downloads\\repos\\StockManagementSystem\\StockManagementSystem\\Program.fs",
+              "RelativeToolTip": "Program.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-13T15:15:47.004Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
