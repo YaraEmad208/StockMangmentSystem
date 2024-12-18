@@ -6,7 +6,7 @@ open System
 open supplierMenue
 open mainMenu
 open login
-open registerAdmin
+open RegisterAdmin
 
 let rec showMainMenu () =
     printfn "Choose an option:"

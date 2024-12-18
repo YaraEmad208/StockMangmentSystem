@@ -1,9 +1,10 @@
-﻿module registerAdmin
+﻿module RegisterAdmin
 open System
 open User
 open AuthService
+open DbContext
+open System.Data.SqlClient
 
-// Function to register an admin
 let registerAdmin () =
     printfn "Enter the admin's name:"
     let name = Console.ReadLine()
@@ -29,22 +30,31 @@ let registerAdmin () =
 
     printfn "\n----------------------------------------------------\n"
 
-let registerUser () =
-    printfn "Enter your name:"
-    let name = Console.ReadLine()
 
+let ensureUserExists () =
     printfn "Enter your phone number:"
     let phone = Console.ReadLine()
 
+    match authenticateByPhone phone with
+    | 0 -> 
+        printfn "User not found. Registering a new user..."
+        printfn "Enter your name:"
+        let name = Console.ReadLine()
 
-    let user = { ID = 0; Name = name; Email = ""; Password = ""; Phone = phone; Role = "User" }
+        let user = { ID = 0; Name = name; Email = ""; Password = ""; Phone = phone; Role = "User" }
+        let ID = register user
 
-   
-    let ID = register user
-
-    if ID > 0 then
-        printfn "User %s has been successfully registered with ID %d!" user.Name ID
-        ID 
-    else
-        printfn "Failed to register user %s." user.Name
-        0 
+        if ID > 0 then
+            printfn "User %s has been successfully registered with ID %d!" user.Name ID
+            ID
+        else
+            printfn "Failed to register user %s." user.Name
+            0
+    | userId -> 
+        printfn "User found with ID %d. Enter '1' to proceed." userId
+        let input = Console.ReadLine()
+        if input = "1" then
+            userId 
+        else
+            printfn "Invalid input. Exiting..."
+            0

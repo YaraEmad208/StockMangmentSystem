@@ -36,6 +36,25 @@ let register (user: User) =
         -1 
 
 
+// Function to authenticate user by phone number
+let authenticateByPhone (phone: string) : int =
+    let connection = getDbConnection()
+    let query = "SELECT ID FROM [User] WHERE Phone = @Phone"
+    
+    try
+        connection.Open()
+        use command = new SqlCommand(query, connection)
+        command.Parameters.AddWithValue("@Phone", phone) |> ignore
+        let result = command.ExecuteScalar()
+        
+        match result with
+        | :? int as userId when userId > 0 -> userId
+        | _ -> 0
+    with ex ->
+        printfn "Error: %s" ex.Message
+        0
+
+
 let login (email: string) (password: string) =
     let query = "SELECT * FROM [User] WHERE role='admin'"
     let parameters = [("@Email", box email)]

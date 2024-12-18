@@ -1,73 +1,76 @@
 ﻿module OrderMenu
-open DbContext
-open System.Data.SqlClient
-open User
+
 open System
+open DbContext
 open OrderService
-open AuthServiceModule
-type OrderMenu(orderService: OrderService,auth:AuthService) =
+open ProductRepository
+open RegisterAdmin
+open RegisterAdmin
 
-    // Method to fetch user by ID
+type OrderMenu(orderService:OrderService,register:RegisterAdminView) =
+    
+    let mutable userId = 0 
+    
+    member this.TakeOrderItems (acc: (int * int) list) =
+        let rec loop (acc: (int * int) list) =
+            printfn "Enter Product ID (or 0 to finish): "
+            match Console.ReadLine() |> Int32.TryParse with
+            | true, 0 -> acc
+            | true, productId ->
+                printfn "Enter Quantity: "
+                match Console.ReadLine() |> Int32.TryParse with
+                | true, quantity when quantity > 0 -> 
+                    loop ((productId, quantity) :: acc) 
+                | _ -> 
+                    printfn "Invalid quantity. Try again."
+                    loop acc
+            | _ -> 
+                printfn "Invalid Product ID. Try again."
+                loop acc
+        loop acc
 
-    // Method to select a user by ID
-    member private this.SelectUser () =
-        printfn "Enter your User ID:"
-        let userId = Int32.Parse(Console.ReadLine())
-        
-        match auth.GetUserById (userId) with
-        | Some user -> 
-            printfn "User found: %s (%d)" user.Name user.ID
-            user
-        | None -> 
-            printfn "User ID not found. Please try again."
-            this.SelectUser()
+    member this.ConfirmOrder (orderId: int) =
+        printfn "Order ID %d has been confirmed." orderId
 
-    // Method to collect order items (product ID and quantity)
-    member private this.CollectOrders () =
-        let rec collectOrders orders =
-            printfn "\nEnter a product and quantity or type 'done' to finish:"
-            match Console.ReadLine() with
-            | "done" -> 
-                printfn "\nYou have completed your order. Summary of your order:"
-                orders
-            | input -> 
-                let parts = input.Split(',')
-                if parts.Length = 2 then
-                    try
-                        let productId = Int32.Parse(parts.[0])
-                        let quantity = Int32.Parse(parts.[1])
-                        printfn "Added Product ID: %d, Quantity: %d" productId quantity
-                        collectOrders ((productId, quantity) :: orders)
-                    with
-                    | :? FormatException -> 
-                        printfn "Invalid input. Please enter in the correct format (productId,quantity)."
-                        collectOrders orders
-                else
-                    printfn "Invalid format. Please enter in the correct format (productId,quantity)."
-                    collectOrders orders
-        collectOrders []
-
-    // Method to process the order
-    member this.ProcessOrder () =
-        // Select user
-        let user = this.SelectUser()
-
-        printfn "-----------------------------------------------------------------------------------"
-        printfn "\nWelcome to the Order System, %s! User ID: %d\n" user.Name user.ID
-        printfn "You can now place an order. Please enter products in the format: productId,quantity."
-        printfn "-----------------------------------------------------------------------------------"
-
-        // Collect orders
-        let orders = this.CollectOrders()
-
-        if List.length orders > 0 then
-            // Place the order using the OrderService
-            let orderId = orderService.PlaceOrder(user.ID, orders)
-            if orderId > 0 then
-                printfn "\nOrder placed successfully! Order ID: %d" orderId
-                // Confirm the order using the OrderService
-                orderService.ConfirmOrder(orderId)
-            else
-                printfn "\nOrder failed. Please try again later."
+    member this.PlaceOrder (orderItems: (int * int) list) =
+        let orderId = orderService.PlaceOrder userId orderItems
+        if orderId > 0 then
+            printfn "Order placed successfully! Order ID: %d" orderId
         else
-            printfn "\nNo items were ordered. Returning to the main menu."
+            printfn "Failed to place the order."
+    
+    member this.ShowMenu () =
+        let mutable exitMenu = false
+        while not exitMenu do
+            printfn "\n--- Order Menu ---"
+            printfn "1. Place an Order"
+            printfn "2. Confirm an Order"
+            printfn "3. Exit"
+            printf "Select an option: "
+            
+            match Console.ReadLine() |> Int32.TryParse with
+            | true, 1 -> 
+                userId <- register.EnsureUserExists() 
+                if userId > 0 then
+                    let orderItems = this.TakeOrderItems []
+                    if orderItems = [] then 
+                        printfn "No items were added to the order."
+                    else
+                        this.PlaceOrder orderItems
+                else
+                    printfn "User validation failed. Cannot place the order."
+            | true, 2 -> 
+                printfn "Enter Order ID to confirm: "
+                match Console.ReadLine() |> Int32.TryParse with
+                | true, orderId -> 
+                    try
+                        this.ConfirmOrder orderId
+                    with ex -> 
+                        printfn "Error: %s" ex.Message
+                | _ -> 
+                    printfn "Invalid Order ID."
+            | true, 3 -> 
+                printfn "Exiting the Order Menu. Goodbye!"
+                exitMenu <- true
+            | _ -> 
+                printfn "Invalid option. Please try again."

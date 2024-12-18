@@ -1,120 +1,76 @@
 ﻿module OrderService
+
 open System
 open System.Data.SqlClient
 open DbContext
 open ProductRepository
-open Product
-open order
 open ListFunctions
+open Product
+open ProductRepository
 
-// Function to calculate the total cost of the order
-let totalCost (orderItems: (int * int) list) : decimal =
-    orderItems
-    |> ListMap (fun (productId, quantity) -> 
+let calculateTotalCost (orderItems: (int * int) list) : decimal =
+    ListMap (fun (productId, quantity) ->
         match getProductById productId with
         | Some product when product.Quantity >= quantity -> product.Price * decimal quantity
-        | Some _ -> 
-            printfn "Not enough stock available for Product ID: %d" productId
-            0.0m
-        | None -> 
-            printfn "Product not found for Product ID: %d" productId
-            0.0m
-    )
-    |> ListSum
+        | Some _ -> 0.0m
+        | None -> 0.0m
+    ) orderItems
+    |>ListSum
 
-// Function to place an order
+let validateStock (orderItems: (int * int) list) : bool =
+    ListFilter (fun (productId, quantity) ->
+        match getProductById productId with
+        | Some product when product.Quantity >= quantity -> true
+        | Some _ ->
+            printfn "Error: The Quantity is not avilabile in stock "
+            false
+        | None ->
+            printfn "Error: Product not found for Product ID: %d" productId
+            false
+    ) orderItems
+    |> fun validItems -> validItems.Length = orderItems.Length
+
 let placeOrder (userId: int) (orderItems: (int * int) list) : int =
-    use connection = getDbConnection()
-    connection.Open()
-
-    let totalCost = totalCost orderItems
-
-    use transaction = connection.BeginTransaction()
-
-    try
-        let insertOrderQuery = 
-            "INSERT INTO [Order] (UserId, TotalPrice, OrderDate, Status) OUTPUT INSERTED.OrderId VALUES (@UserId, @TotalPrice, GETDATE(), 'Pending')"
-        
-        let orderId = 
-            use command = new SqlCommand(insertOrderQuery, connection, transaction)
-            command.Parameters.AddWithValue("@UserId", userId) |> ignore
-            command.Parameters.AddWithValue("@TotalPrice", totalCost) |> ignore
-            command.ExecuteScalar() :?> int
-
-        orderItems
-        |> ListIter (fun (productId, quantity) -> 
-            let product = getProductById productId |> Option.get
-            let pricePerUnit = product.Price
-
-            let insertDetailsQuery = 
-                "INSERT INTO OrderDetails (OrderId, ProductId, Quantity, PricePerUnit) VALUES (@OrderId, @ProductId, @Quantity, @PricePerUnit)"
-            let updateStockQuery = 
-                "UPDATE Product SET Quantity = Quantity - @Quantity WHERE ProductId = @ProductId"
-
-            use insertDetailsCommand = new SqlCommand(insertDetailsQuery, connection, transaction)
-            insertDetailsCommand.Parameters.AddWithValue("@OrderId", orderId) |> ignore
-            insertDetailsCommand.Parameters.AddWithValue("@ProductId", productId) |> ignore
-            insertDetailsCommand.Parameters.AddWithValue("@Quantity", quantity) |> ignore
-            insertDetailsCommand.Parameters.AddWithValue("@PricePerUnit", pricePerUnit) |> ignore
-            insertDetailsCommand.ExecuteNonQuery() |> ignore
-
-            use updateStockCommand = new SqlCommand(updateStockQuery, connection, transaction)
-            updateStockCommand.Parameters.AddWithValue("@ProductId", productId) |> ignore
-            updateStockCommand.Parameters.AddWithValue("@Quantity", quantity) |> ignore
-            updateStockCommand.ExecuteNonQuery() |> ignore
-
-            outgoingStock productId quantity
-        )
-
-        transaction.Commit()
-        printfn "Order placed successfully! Total Cost: %M" totalCost
-        orderId
-
-    with ex -> 
-        transaction.Rollback()
-        printfn "Order failed: %s" ex.Message
+    if not (validateStock orderItems) then
+        printfn "Order validation failed due to insufficient stock or invalid products."
         0
+    else
+        use connection = getDbConnection()
+        connection.Open()
 
-// Function to confirm an order
-let confirmOrder (orderId: int) =
-    printfn "New Order Received (Order ID: %d)" orderId
+        use transaction = connection.BeginTransaction()
 
-    let fetchOrderQuery = 
-        "SELECT OrderId, UserId, TotalPrice, OrderDate, Status FROM [Order] WHERE OrderId = @OrderId"
-    let fetchOrderDetailsQuery = 
-        "SELECT OrderDetailId, OrderId, ProductId, Quantity, PricePerUnit FROM OrderDetails WHERE OrderId = @OrderId"
+        try
+            let totalCost = calculateTotalCost orderItems
 
-    use connection = getDbConnection()
-    connection.Open()
+            let orderId =
+                let query = "INSERT INTO [Order] (UserId, TotalPrice, OrderDate, Status) OUTPUT INSERTED.OrderId VALUES (@UserId, @TotalPrice, GETDATE(), 'Pending')"
+                use command = new SqlCommand(query, connection, transaction)
+                command.Parameters.AddWithValue("@UserId", userId) |> ignore
+                command.Parameters.AddWithValue("@TotalPrice", totalCost) |> ignore
+                command.ExecuteScalar() :?> int
 
-    let order =
-        use command = new SqlCommand(fetchOrderQuery, connection)
-        command.Parameters.AddWithValue("@OrderId", orderId) |> ignore
-        use reader = command.ExecuteReader()
-        if reader.Read() then
-            { OrderId = reader.GetInt32(0)
-              UserId = reader.GetInt32(1)
-              TotalPrice = reader.GetDecimal(2) 
-              OrderDate = reader.GetDateTime(3)
-              Status = reader.GetString(4)
-              }
-        else
-            failwith "Order not found!"
+            ListIter (fun (productId, quantity) ->
+                let detailQuery = "INSERT INTO OrderDetails (OrderId, ProductId, Quantity, PricePerUnit) VALUES (@OrderId, @ProductId, @Quantity, (SELECT Price FROM Product WHERE ProductId = @ProductId))"
+                use detailCommand = new SqlCommand(detailQuery, connection, transaction)
+                detailCommand.Parameters.AddWithValue("@OrderId", orderId) |> ignore
+                detailCommand.Parameters.AddWithValue("@ProductId", productId) |> ignore
+                detailCommand.Parameters.AddWithValue("@Quantity", quantity) |> ignore
+                detailCommand.ExecuteNonQuery() |> ignore
 
-    let orderDetails =
-        use command = new SqlCommand(fetchOrderDetailsQuery, connection)
-        command.Parameters.AddWithValue("@OrderId", orderId) |> ignore
-        use reader = command.ExecuteReader()
-        [ while reader.Read() do
-            yield { OrderDetailId = reader.GetInt32(0)
-                    OrderId = reader.GetInt32(1)
-                    ProductId = reader.GetInt32(2)
-                    Quantity = reader.GetInt32(3)
-                    PricePerUnit = reader.GetDecimal(4) }
-        ]
+                
+                let stockQuery = "UPDATE Product SET Quantity = Quantity - @Quantity WHERE ProductId = @ProductId"
+                use stockCommand = new SqlCommand(stockQuery, connection, transaction)
+                stockCommand.Parameters.AddWithValue("@ProductId", productId) |> ignore
+                stockCommand.Parameters.AddWithValue("@Quantity", quantity) |> ignore
+                stockCommand.ExecuteNonQuery() |> ignore
+            ) orderItems
 
-    printfn "Order Summary:"
-    printfn "Total Price: %M" order.TotalPrice
-    orderDetails |> ListIter (fun detail -> 
-        printfn "Product ID: %d, Quantity: %d, Price Per Unit: %M" detail.ProductId detail.Quantity detail.PricePerUnit
-    )
+            transaction.Commit()
+            printfn "Order placed successfully! Total Cost: %M" totalCost
+            orderId
+
+        with ex ->
+            transaction.Rollback()
+            printfn "Order failed: %s" ex.Message
+            0

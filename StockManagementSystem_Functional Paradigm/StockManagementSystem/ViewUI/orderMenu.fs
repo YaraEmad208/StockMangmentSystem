@@ -1,96 +1,73 @@
 ﻿module OrderMenu
+
 open DbContext
 open System.Data.SqlClient
-open User
 open System
 open OrderService
-// Function to fetch a user by ID from the database
+open ProductRepository
+open RegisterAdmin
 
-// Function to fetch user by ID from the database
-let getUserById (Id: int) =
-    // Define the SQL query to fetch the user by ID
-    let query = "SELECT * FROM [User] WHERE ID = @ID"
+
+let rec takeOrderItems (acc: (int * int) list) =
+    printfn "Enter Product ID (or 0 to finish): "
+    match Console.ReadLine() |> Int32.TryParse with
+    | true, 0 -> acc 
+    | true, productId ->
+        printfn "Enter Quantity: "
+        match Console.ReadLine() |> Int32.TryParse with
+        | true, quantity when quantity > 0 -> 
+            takeOrderItems ((productId, quantity) :: acc) 
+        | _ -> 
+            printfn "Invalid quantity. Try again."
+            takeOrderItems acc
+    | _ ->
+        printfn "Invalid Product ID. Try again."
+        takeOrderItems acc
+
+let confirmOrder (orderId: int) =
+    printfn "Order ID %d has been confirmed." orderId
+
+
+
+let rec mainMenu () =
+    printfn "\n--- Order Menu ---"
+    printfn "1. Place an Order"
+    printfn "2. Confirm an Order"
+    printfn "3. Exit"
+    printf "Select an option: "
     
-    // Open a database connection using your custom getDbConnection function
-    use connection = getDbConnection()
-    connection.Open()
-
-    // Create a SQL command with the query and connection
-    use command = new SqlCommand(query, connection)
-    command.Parameters.AddWithValue("@ID", Id) |> ignore
-    
-    // Execute the query and handle the result
-    use reader = command.ExecuteReader()
-    
-    if reader.HasRows then
-        reader.Read() |> ignore
-        Some {
-            ID = reader.GetInt32(0)
-            Name = reader.GetString(1)
-            Email = reader.GetString(2)
-            Password = reader.GetString(3)  
-            Phone = reader.GetString(4)  
-            Role = reader.GetString(5)  
-        }
-    else
-        None
-
-let orderProcess () =
-    // Select user by ID
-    let rec selectUser () =
-        printfn "Enter your User ID:"
-        let ID = Int32.Parse(Console.ReadLine())
-        
-        match getUserById ID with
-        | Some user -> 
-            printfn "User found: %s (%d)" user.Name user.ID
-            user
-        | None -> 
-            printfn "User ID not found. Please try again."
-            selectUser()
-    
-    // Select user
-    let user = selectUser()
-
-    printfn "-----------------------------------------------------------------------------------"
-    printfn "\nWelcome to the Order System, %s! User ID: %d\n" user.Name user.ID
-    printfn "You can now place an order. Please enter products in the format: productId,quantity."
-    printfn "-----------------------------------------------------------------------------------"
-
-    // Recursive function to collect orders
-    let rec collectOrders orders =
-        printfn "\nEnter a product and quantity or type 'done' to finish:"
-        match Console.ReadLine() with
-        | "done" -> 
-            printfn "\nYou have completed your order. Summary of your order:"
-            orders
-        | input -> 
-            let parts = input.Split(',')
-            if parts.Length = 2 then
-                try
-                    let productId = Int32.Parse(parts.[0])
-                    let quantity = Int32.Parse(parts.[1])
-                    printfn "Added Product ID: %d, Quantity: %d" productId quantity
-                    collectOrders ((productId, quantity) :: orders)
-                with
-                | :? FormatException -> 
-                    printfn "Invalid input. Please enter in the correct format (productId,quantity)."
-                    collectOrders orders
+    match Console.ReadLine() |> Int32.TryParse with
+    | true, 1 -> 
+        let userId = ensureUserExists ()
+        if userId > 0 then
+            let orderItems = takeOrderItems []
+            if orderItems = [] then 
+                printfn "No items were added to the order."
             else
-                printfn "Invalid format. Please enter in the correct format (productId,quantity)."
-                collectOrders orders
-
-    // Collect orders and place the order
-    let orders = collectOrders []
-    
-    if orders.Length > 0 then
-        // Place the order using the OrderService
-        let orderId = OrderService.placeOrder user.ID orders   
-        if orderId > 0 then
-            printfn "\nOrder placed successfully! Order ID: %d" orderId
-            // Confirm the order using the OrderService
-            OrderService.confirmOrder orderId
+                let orderId = placeOrder userId orderItems
+                if orderId > 0 then
+                    printfn "Order placed successfully! Order ID: %d" orderId
+                else
+                    printfn "Failed to place the order."
         else
-            printfn "\nOrder failed. Please try again later."
-    else
-        printfn "\nNo items were ordered. Returning to the main menu."
+            printfn "User validation failed. Cannot place the order."
+
+        mainMenu ()
+    | true, 2 -> 
+        printfn "Enter Order ID to confirm: "
+        match Console.ReadLine() |> Int32.TryParse with
+        | true, orderId -> 
+            try
+                confirmOrder orderId
+            with ex -> 
+                printfn "Error: %s" ex.Message
+        | _ -> 
+            printfn "Invalid Order ID."
+        mainMenu ()
+    | true, 3 -> 
+        printfn "Exiting the Order Menu. Goodbye!"
+        ()
+    | _ -> 
+        printfn "Invalid option. Please try again."
+        mainMenu ()
+

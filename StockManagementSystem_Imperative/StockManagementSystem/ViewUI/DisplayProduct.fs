@@ -7,7 +7,6 @@ open Product
 
 
 
-// Menu display function
 let showMenu () =
     printfn "\n----- Product Management -----"
     printfn "1. Add Product"
@@ -17,9 +16,7 @@ let showMenu () =
     printfn "5. Exit"
     printf "\nEnter your choice: "
 
-// ProductManager Class
 type ProductManager(productRepo: ProductRepository) =
-    // Add Product
     member this.AddProduct() =
         printfn "\n--- Add New Product ---"
         printf "SupplierId: "
@@ -38,7 +35,6 @@ type ProductManager(productRepo: ProductRepository) =
         else
             printfn "Error: Product name cannot be empty."
 
-    // Update Product
     member this.UpdateProduct() =
         printfn "\n--- Update Product ---"
         printf "Enter the Product ID to update: "
@@ -65,7 +61,6 @@ type ProductManager(productRepo: ProductRepository) =
         else
             printfn "Error: Product with ID %d not found." productId
 
-    // Delete Product
     member this.DeleteProduct() =
         printfn "\n--- Delete Product ---"
         printf "Enter the Product ID to delete: "
@@ -77,7 +72,6 @@ type ProductManager(productRepo: ProductRepository) =
         else
             printfn "Error: Product with ID %d not found." productId
 
-    // View All Products
     member this.ViewAllProducts() =
         let products = productRepo.GetAllProducts()
         printfn "\n--- List of All Products ---"
@@ -89,7 +83,6 @@ type ProductManager(productRepo: ProductRepository) =
             printfn "No products available."
         printfn "--------------------------------"
 
-    // Handle Menu Selection
     member this.HandleMenuSelection() =
         let mutable isRunning = true
 

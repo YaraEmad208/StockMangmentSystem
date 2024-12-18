@@ -18,7 +18,7 @@ let rec mainMenu () =
         handleMenuSelection() 
         mainMenu() 
     | "2" -> 
-        orderProcess()
+        OrderMenu.mainMenu()
         mainMenu() 
     | "3" -> 
         generateAllReports 5 
